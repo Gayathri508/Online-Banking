@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<title>Samriddhi Customer Transaction Page</title>
+<link rel ="icon" type="image/ico" href="only globe.jpg"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    
+    left: 0;
+}
+
+@media screen and (max-width: 1024px){
+    img.bg {
+    left: 50%;
+    margin-left: 512px; }
+    body {font-family: Arial;}
+    * {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+</style>
+</head>
+<div class="container" style="margin-top:30px">
+  <nav class="navbar navbar-expand-lg navbar-light bg-info text-light py-1 main-nav">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="logoonline.jpg" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-uppercase font-weight-bold text-white" href="index.html"><i class="fa fa-fw fa-home"></i>Home<span class="sr-only">(current)</span></a>
+                  </li>
+     
+                  <li class="nav-item active">
+                    <a class="nav-link  text-uppercase font-weight-bold text-white" href="CustomerLogin.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <img class="d-block img-fluid" src="manager.png" alt="First slide">
+      <p>Hello..Customer welcome to your home page...</p>
+      
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active bg-success">Quick Links</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AccountSummary.html"><i class="fa fa-fw fa-list fa-lg" aria-hidden="true"></i><b>Account Summary</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="FundTransfer.html"><i class="fa fa-fw fa-exchange fa-lg" aria-hidden="true"></i><b>Fund Transfer</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  bg-info active" href="TransactionHistory.html"><i class="fa fa-fw fa-history fa-lg" aria-hidden="true"></i><b>Transaction History</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Request.html"><i class="fa fa-fw fa-group fa-lg" aria-hidden="true"></i><b>Request for another Account</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Profile.html"><i class="fa fa-fw fa-user-circle-o fa-lg" aria-hidden="true"></i><b>Profile</b></b></a>
+        </li>
+      </ul>
+      
+      <hr class="d-sm-none">
+      
+    </div>
+    <div class="col-sm-8">
+    <body>
+</br>
+
+<button class="tablink" onclick="openPage('Savings', this,'lightgrey')" id="defaultOpen">Savings</button>
+<button class="tablink" onclick="openPage('Current', this, 'lightgrey')">Current</button>
+
+<div id="Savings" class="tabcontent">
+</br>
+  <h3>Savings</h3>        
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Credit</th>
+        <th>Debit</th>
+        <th>Balance</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>23-03-1999</td>
+        <td>hi!</td>
+        <td>500</td>
+        <td>500</td>
+        <td>678500</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ 
+<div id="Current" class="tabcontent">
+</br>
+  <h3>Current</h3>        
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Credit</th>
+        <th>Debit</th>
+        <th>Balance</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>23-03-1999</td>
+        <td>hi!</td>
+        <td>500</td>
+        <td>500</td>
+        <td>678500</td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</div>
+  </div>
+  </div>  
+</div>
+</div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <footer class="page-footer font-small blue pt-0">
+     <div class="row">
+   
+         <div class="col-sm-4">
+             <b><p>
+                 Information & Research Help
+             </p></b>
+             <p>
+                 630-844-5437 (phone)
+             </p>
+             <p>
+                 630-844-3848 (fax)
+             </p>
+             <p>
+                 630-796-7615 (text)
+             </p>
+         </div>
+         
+          <div class="col-sm-4">
+             <b><p>
+                 @SAMRIDHI Terms and conditions
+             </p></b>
+             <p>
+                 I agree to abide by the
+             </p>
+            <b> <p>
+                Bank's Terms and Conditions 
+             </p></b>
+             <p>
+                and rules and the changes
+             </p>
+             <p>
+                in terms and conditions.
+             </p>
+             
+         </div>
+         <div class="col-sm-4">
+             <b><p>
+                e-mail 
+             </p></b>
+             <p>
+                SNBonline@gmail.com
+             </div>
+</div>
+</div>
+</footer>
+</body>
+</html>
